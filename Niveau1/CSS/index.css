@@ -9,16 +9,17 @@ body{
 	 color: white;
 
 }
+@media only screen and (max-width: 600px) {
 
-/*#wrapper{
-	width: 900px;
-	margin: 0 auto;
+#wrapper{
+	font-size: 9px;
+	width: 1500px;
 	min-width:780px;
 	max-width: 1000px;
 	max-height: 1000px;
-	border: 3px solid white;
+	}
+
 }
-*/
 header{
 	margin: 0;
 	padding: 0;
