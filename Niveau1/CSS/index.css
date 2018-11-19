@@ -1,9 +1,9 @@
 body{
-	 font-family: Arial, Helvetica, sans-serif;
+	 
 	 border: none;
 	 margin: 0;
 	 padding: 0;
-	 background: black;
+	 background: #030408;
 	 white-space: nowrap;
 	 height: 1000px;
 	 color: white;
@@ -12,20 +12,31 @@ body{
 @media only screen and (max-width: 600px) {
 
 #wrapper{
-	font-size: 9px;
-	width: 1500px;
 	min-width:780px;
-	max-width: 1000px;
+	max-width: 900px;
 	max-height: 1000px;
 	}
-
-}
 header{
+	width: 1050px;
+	}
+
+	#Kantlijn{
+		width: 100%;
+		}
+
+		#Servers{
+	width: 300px;
+	height: 300px;
+		}
+	
+}
+
+header{
+	width: auto;
 	margin: 0;
 	padding: 0;
 	border: none;
 	color: white;
-	text-align: center;
 	height: 60px;
 	background: #5159a5;
 	margin-top: -6px;
@@ -35,12 +46,14 @@ header{
 	background:#7f89e0 !important;
 }
 #HeaderText2{
+	line-height: 60px;
+	text-align: center;
 	margin-top: 5px;
 	padding: 0;
 	border: none;
 }
 #Dropdown{
-	height: 120px;
+	height: 95px;
 	margin-top: -25px;
 	width: 160px;
 }
@@ -73,18 +86,20 @@ header{
 
 
 content{
-	font-size: 25px;
+	width: 900px;
+	margin: 0 auto;
 }
 
 #Kantlijn{
+	white-space: normal;
+	position: relative;
 	display: block;
 	margin: 0 auto;
 	height: auto;
-	width: 1000px;
+	width: 500px;
 }
 
 #Servers{
-	margin-top: 30px;
 	border: 3px solid white;
 	display: block;
 	margin: 0 auto;
