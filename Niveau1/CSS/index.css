@@ -1,0 +1,83 @@
+body{
+	 font-family: Arial, Helvetica, sans-serif;
+	 border: none;
+	 margin: 0;
+	 padding: 0;
+	 background: black;
+	 white-space: nowrap;
+	 height: 1000px;
+	 color: white;
+
+}
+
+/*#wrapper{
+	width: 900px;
+	margin: 0 auto;
+	min-width:780px;
+	max-width: 1000px;
+	max-height: 1000px;
+	border: 3px solid white;
+}
+*/
+header{
+	margin: 0;
+	padding: 0;
+	border: none;
+	color: white;
+	text-align: center;
+	height: 60px;
+	background: #5159a5;
+	margin-top: -6px;
+}
+
+.Current{
+	background:#7f89e0 !important;
+}
+#HeaderText2{
+	margin-top: 5px;
+	padding: 0;
+	border: none;
+}
+#Dropdown{
+	height: 120px;
+	margin-top: -25px;
+	width: 160px;
+}
+
+#DropdownButton{
+	cursor:pointer;
+	position: absolute;
+	height: 45px;
+	width: 80px;
+	margin-left: 40px;
+	font-size: 30px;
+	border: none;
+	background: #5159a5;
+	margin-top: -34px;
+}
+
+#MenuItems{
+	background: #5159a5;
+	padding-top: -50px;
+	text-decoration: none;
+	display: none;
+	color: white;
+}
+#Dropdown:hover #MenuItems{
+	text-align: center;
+	display: block;
+	
+}
+
+
+
+content{
+	font-size: 25px;
+}
+
+#Kantlijn{
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	width: 1000px;
+}
