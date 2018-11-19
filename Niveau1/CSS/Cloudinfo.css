@@ -1,9 +1,12 @@
-#Yellow{
+#Cloud{
+	width: 500px;
+	height: 400px;
+}
+p{
+	color: white;
+	font-size: 25px;
 }
 
-#Orange{
-}
-
-#Green{
-	
+#List{
+	color: white;
 }
