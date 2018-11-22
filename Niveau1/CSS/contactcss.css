@@ -1,0 +1,48 @@
+textarea, input[type=text]{
+	box-sizing: border-box;
+	width: 500px;
+	padding: 15px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	display: block;
+	resize: vertical;
+	border-radius: 6px;
+	border: 3px solid #5159a5;
+
+}
+
+#thingy{
+pointer-events: none;
+border-radius: 6px;
+color: black;
+border: none;
+background:	white;
+
+}
+
+#thingy:hover{
+	color: white;
+	background-color:#5dc936;
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+     transition: background-color 400ms linear;
+}
+
+#FormContainer{
+	width: 500px;
+	display: block;
+	margin: auto;
+}
+
+h1{
+	margin-top: -50px;
+	text-align: center;
+}
+
+#Contact{
+	padding-top: 30px;
+	width: 300px;
+	margin: auto;
+	text-align: left;
+
+}

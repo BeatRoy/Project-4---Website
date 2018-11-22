@@ -7,6 +7,7 @@
 
 	<META content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<link href="CSS/index.css" rel="stylesheet" type="text/css" />
+	<link href="CSS/contactcss.css" rel="stylesheet" type="text/css" />
 	<TITLE>Colicss</TITLE>
 	</head>
 		<body>
@@ -24,12 +25,54 @@
 					<a id="MenuItems" href="Socialmedia.html">Socialmedia</a>
 					<a id="MenuItems" href="Cloud-info.html">Cloud Info</a>
 			</div>
-			
-			<content>
-		<div id="Kantlijn">
+			<h1>Contact</h1>
+				<div id="FormContainer">
+					<form>
+						<label for="Voornaam">Voornaam:</label>
+						<input id="Voornaam" type="text" name="Vnaam" placeholder="Je naam..." onblur="requiredField(this, 0);" required>
+						<label for="Achternaam">Achternaam:</label>
+						<input id="Achternaam" type="text" name="Anaam" placeholder="Je achternaam..." onblur="requiredField(this, 1);" required>
 
+						<label for="Email">Email:</label>
+						<input id="Email" type="text" name="Enaam" placeholder="Je Email..." onblur="requiredField(this, 2);" required>
+
+						 <label for="Onderwerp">Onderwerp:</label>
+    					<textarea id="Onderwerp" name="Owerp" placeholder="Like what you see...?" style="height:200px" onblur="requiredField(this, 3);" required></textarea>
+
+    					<input onclick="DisplayContact();" id="thingy" type="submit" value="Submit">
+					</form>
+				</div>
+					<div id="Contact_gegevens">
+					<h2 id="Contact">Alternatieve contactgegevens:</h2>
+			<h3 id="Contact">Colicss<br>
+
+				Herenstraat 24<br>
+
+				7776 AG, Slagharen<br>
+
+				06-12412498<br>
+
+				KVK: 050768931
+			</h3>
 		</div>
-			</content>
 		</body>
+		<script type="text/javascript">
+			window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+								
+			var validationArray = [0, 0, 0, 0];
+			function DisplayContact(){
+				window.alert("Bericht verzonden!");
+				location.reload();
+			}
+			function requiredField(input, fieldNumber) {
+				if(input.value != ""){
+					validationArray[fieldNumber] = 1;
+				}
+				if (!validationArray.includes(0)) {
+					  document.getElementById("thingy").style = "pointer-events: auto";  
+				}
+			}
 
+
+		</script>
 </html>
