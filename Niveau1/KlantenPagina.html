@@ -26,10 +26,33 @@
 					<a id="MenuItems" href="Cloud-info.html">Cloud Info</a>
 			</div>
 			<h1 id="Klanten">Onze trouwe klanten</h1>
-			<div id="Kantlijn">
+				<div class="slides">
+					<img id="slider" src="Images/Hyves.png" />
+					<!--
 				<img src="Images/Hyves.png"> <img src="Images/hp.png">
 				<img src="Images/Facebook.png"> <img src="Images/google.png">
-			</div>
+			-->
+		</div>
 		</body>
+	<script language="JavaScript"> 
+		var i = 0; var path = new Array(); 
+
+// LIST OF IMAGES 
+path[0] = "Images/Hyves.png"; 
+path[1] = "Images/Facebook.png"; 
+path[2] = "Images/hp.png";
+path[3] = "Images/google.png";
+function imageSwitch(){
+	if (i < 4) {
+		document.getElementById('slider').src=path[i];
+		i++;
+	}else{
+	  i = 0;
+	}
+
+}
+window.setInterval(function(){imageSwitch();},2000);
+</script> 
+
 
 </html>

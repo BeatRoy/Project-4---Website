@@ -24,3 +24,9 @@ img{
 	width: 212px;
 	height: 212px;
 }
+
+#slider{
+	display: block;
+	width: 200px;
+	margin: auto;
+}
