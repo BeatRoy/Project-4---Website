@@ -9,6 +9,11 @@ font-size: 25px;
 }
 
 #Kantlijn{
-	width: 575px;
 }
 
+
+#PakketInfo{
+	display: block;
+	width: auto;
+	margin: auto;
+}

@@ -9,24 +9,12 @@ body{
 	 color: white;
 
 }
-@media only screen and (max-width: 600px) {
-
-#wrapper{
-	min-width:780px;
-	max-width: 900px;
-	max-height: 1000px;
-	}
-	#Kantlijn{
-		width: 100%;
-		}
-
-		#Servers{
-	width: 300px;
-	height: 300px;
-		}
-	
-}
-
+@media screen and (min-width: 1647px) {
+  #HeaderItems a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 #HeaderItems{
 	font-size: 30px;
 	margin-left: 6px;
