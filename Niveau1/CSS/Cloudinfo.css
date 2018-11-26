@@ -10,3 +10,9 @@ p{
 #List{
 	color: white;
 }
+
+#FatClout{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 60px;
+}

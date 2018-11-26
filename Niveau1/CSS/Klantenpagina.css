@@ -1,6 +1,8 @@
 #Klanten{
-	margin-top: -50px;
+	font-size: 60px;
+	margin-top: 10px;
 	text-align: center;
+	margin-bottom: 80px;
 }
 
 #Bedrijven{
@@ -21,12 +23,12 @@
 img{
 	margin-top: 25px;
 	margin-left: 8px;
-	width: 212px;
-	height: 212px;
+	width: 400;
+	height: 400x;
 }
 
 #slider{
 	display: block;
-	width: 200px;
+	width: 400px;
 	margin: auto;
 }
