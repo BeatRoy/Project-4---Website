@@ -48,3 +48,14 @@ background:	white;
 	text-align: center;
 
 }
+
+
+@media screen and (max-width: 1500px){
+
+	textarea, input[type=text]{
+		width: 320px;
+	}
+#FormContainer{
+	width: 300px;
+}
+}
