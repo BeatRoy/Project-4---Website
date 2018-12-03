@@ -1,18 +1,150 @@
-#Cloud{
-	width: 500px;
-	height: 400px;
-}
-p{
-	color: white;
-	font-size: 25px;
+body{
+	height: 950px;
 }
 
-#List{
-	color: white;
-}
-
-#FatClout{
-	text-align: center;
+#Pakketen{
 	margin-top: 10px;
+	text-align: center;
 	font-size: 60px;
+}
+
+h4, p{
+font-size: 25px;
+}
+
+#Blokken{
+	text-align: center;
+	padding-top: 80px;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Geel{	
+	margin: 0;
+	border-right: 30px solid black;
+display: inline-block;
+width: 325px;
+height: 400px;
+background:  linear-gradient(to bottom, #cccc00 0%, #cccc00 33%, white 33%, white 66%);;
+}
+
+#Oranje{
+	margin: 0 ;
+	border-right: 30px solid black;
+display: inline-block;
+width: 325px;
+height: 400px;
+background: linear-gradient(to bottom, orange 0%, orange 33%, white 33%, white 66%);
+}
+#Groen{
+	margin: 0;
+		border-right: 30px solid black;
+display: inline-block;
+width: 325px;
+height: 400px;
+background:  linear-gradient(to bottom, #33cc33 0%, #33cc33 33%, white 33%, white 66%);
+}
+
+#Geel:hover{
+ width: 350px;
+
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 0.5s;
+}
+#Oranje:hover{
+ width: 350px;
+
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 0.5s;
+}
+
+#Groen:hover{
+ width: 350px;
+
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 0.5s;
+}
+
+#Opties{
+	border: 3px solid black;
+	background-color: white;
+	height: 25px;
+	width:65px;
+}
+
+#Calculator{
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	background: #0052cc;
+	width: auto;
+	margin-top: 60px;
+	text-align: center;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#Kosten{
+	color: white;
+}
+
+#ZeInput{
+	border: 3px solid black;
+	background: white;
+}
+#CalcButton{
+	cursor: pointer;
+	background:;
+	border: 3px solid black;
+}
+
+#CalcButton:hover{
+	background-color:#5dc936;
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+     transition: background-color 400ms linear;
+ }
+
+#Info{
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+#Titels{
+	margin-bottom: 120px;
+}
+
+#Buy{
+	cursor: pointer;
+	border: 3px transparent black;
+	background-color: green;
+}
+@media screen and (max-width: 1500px){
+
+}
+
+#Margin{
+	padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1100px){
+	#Geel, #Oranje, #Groen{
+		border: none;
+		display: block;
+		width: 300px;
+		margin: auto;
+	}
+
+	#Blokken{
+		width: auto;
+	}
+
+}
+
+
+@media screen and (max-width: 600px){
+		#Pakketen{
+		font-size: 31px;
+	}
 }

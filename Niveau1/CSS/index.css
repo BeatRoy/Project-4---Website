@@ -1,5 +1,4 @@
 body{
-	 
 	 border: none;
 	 margin: 0;
 	 padding: 0;
@@ -97,7 +96,7 @@ content{
 		display: none;
 	}
 	#Textblok{
-	font-size: 2.6vw;
+	font-size: 2.5vw;
 }
 
 #Servers{

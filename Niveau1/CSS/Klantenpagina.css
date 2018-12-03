@@ -33,3 +33,18 @@ img{
 	margin: auto;
 }
 
+@media screen and (max-width: 1100px){
+
+	#slider{
+	width: 200px;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+
+	#Klanten{
+		font-size: 31px;
+
+	}
+}

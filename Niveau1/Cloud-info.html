@@ -20,14 +20,135 @@
 					<h1 id="HeaderItems"><a href="Socialmedia.html">Socialmedia</a></h1>
 					<h1 class="Current" id="HeaderItems"><a href="Cloud-info.html">Cloud Info</a></h1>
 			</div>
+			</div>
 				<div id="Responsive"></div>
-		<div id="Kantlijn">
-				<h1 id="FatClout">Cloud Pakketen</h1>
-			<p>Pakket Geel: 10GB opslag  (4 euro per maand)</p>
-			<p>Pakket Oranje: 100GB opslag (6 euro per maand)</p>
-			<p>Pakket Groen: 1TB opslag (10 euro per maand)</p>
-			<img id="Cloud" src="Images/Cloud.png">
+		<h1 id="Pakketen">Cloud Pakketen</h1>
+		
+<div id="Blokken">
+
+	<div id="Geel">
+		<h1 id="Titels">Geel</h1>
+	<div id="Margin">
+		<h5 id="Info">Pakket Geel: 10GB opslag</h5>
+		<h5 id="Info">(4 euro per maand))</h5>
+	</div>
+		<button id="Buy">Buy this package!</button>
+	</div>
+
+	<div id="Oranje">
+		<h1 id="Titels">Oranje</h1>
+	<div id="Margin">
+		<h5 id="Info"> Pakket Oranje: 100GB opslag</h5>
+		<h5 id="Info">(6 euro per maand)</h5>
+	</div>
+		<button id="Buy">Buy this package!</button>
+	</div>
+
+			<div id="Groen">
+		<h1 id="Titels">Groen</h1>
+	<div id="Margin">
+		<h5 id="Info"> Pakket Groen: 1TB opslag</h5>
+		<h5 id="Info">(10 euro per maand)</h5>
+	</div>
+		<button id="Buy">Buy this package!</button>
+			</div>
+	</div>
+</div>
+
+<div id="Calculator">
+	<h4 id="Kosten">Bereken de kosten van uw aankoop</h4>
+			 <select id="Opties">
+			  <option id="Brons" value="0">Brons</option>
+			  <option id="Silver" value="1">Silver</option>
+			  <option id="Goud" value="2">Goud</option>
+		</div>
+	</select> 
+	<input  id="ZeInput" type="input" name="input" placeholder="maanden..">
+	<button id="CalcButton" onclick="Money();">Bereken kosten</button>
+	<h4 id="Kosten">Het kost: $<a id="Cost">0</a> (Je hebt <a id="Korting">0</a>% korting)</h4>
+
+
+
+		<!--	
+		<h4>Pakket Brons: 10 GB HDD, 512MB RAM, 1 Core,100GB dataverkeer per maand<br> (5,95 euro per maand)</h4>
+		<h4>Pakket Silver: 20 GB HDD, 1048MB RAM, 2 Cores, 200GB dataverkeer per maand<br> (7,95 euro per maand)</h4>
+		<h4> Pakket Goud: 50 GB HDD, 2048MB RAM, 4 Cores, onbeperkt dataverkeer per maand<br> (10,95 euro per maand)</h4>
+		<p>Dit zijn de hosting pakketen die beschikbaar zijn.<br> Per pakket worden ze uiteraard
+			Duurder maar u heeft er wel meer aan natuurlijk!</p>
+			<img id="Gold" src="Images/Gold.jpg">-->
 		</div>
 		</body>
 
+		<script type="text/javascript">
+		var bronsc = 0;
+		var silversc = 0;
+		var goldsc = 0; 
+		var message =  document.getElementById("Cost");
+		var korting = document.getElementById("Korting");
+		var cost = document.getElementById("ZeInput").value;
+		
+	function Money() {
+		var listValue = document.getElementById("Opties").value;
+	if (listValue == 0) {
+		console.log(listValue);
+		bronsc = 0;
+		cost = document.getElementById("ZeInput").value;
+		if (cost <= 11){
+			bronsc = cost * 4;
+			message.innerHTML = bronsc;
+			korting.innerHTML = ("0");
+		}
+		if (cost > 11) {
+			bronsc = cost * 3.68;
+			message.innerHTML = bronsc;
+			korting.innerHTML = ("8");
+		}
+		if (cost > 59) {
+			bronsc = cost * 3.4;
+			message.innerHTML = bronsc;
+			korting.innerHTML = ("15");
+		}
+	}	
+		if (listValue == 1) {
+			console.log(listValue);
+		silversc = 0;
+		cost = document.getElementById("ZeInput").value;
+	if (cost <= 11){
+			silversc = cost * 6;
+			message.innerHTML = silversc;
+			korting.innerHTML = ("0");
+		}
+		if (cost > 11) {
+			silversc = cost * 5.52;
+			message.innerHTML = silversc;
+			korting.innerHTML = ("8");
+		}
+		if (cost > 59) {
+			silversc = cost * 5.1;
+			message.innerHTML = silversc;
+			korting.innerHTML = ("15");
+		}
+	}	
+		if (listValue == 2) {
+			console.log(listValue);
+		goldsc = 0;
+		cost = document.getElementById("ZeInput").value;
+		if (cost <= 11){
+			goldsc = cost * 10;
+			message.innerHTML = goldsc;
+			korting.innerHTML = ("0");
+		}
+		if (cost > 11) {
+			goldsc = cost * 9.2;
+			message.innerHTML = goldsc;
+			korting.innerHTML = ("8");
+		}
+		if (cost > 59) {
+			goldsc = cost * 8.5;
+			message.innerHTML = goldsc;
+			korting.innerHTML = ("15");
+		}
+	}	
+}
+</script>
 </html>

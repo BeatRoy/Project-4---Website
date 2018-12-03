@@ -22,18 +22,135 @@
 					<h1 id="HeaderItems"><a href="Cloud-info.html">Cloud Info</a></h1>
 			</div>
 				<div id="Responsive"></div>
-			<h1 id="Pakketen">Hosting Pakketen</h1>
-		<div id="Kantlijn">
-			<div id="PakketInfo">
-		<h4>Pakket Brons: 10 GB HDD, 512MB RAM, 1 Core, 100GB dataverkeer per maand<br> (5,95 euro per maand)</h4>
+		<h1 id="Pakketen">Hosting Pakketen</h1>
+		
+<div id="Blokken">
+
+	<div id="Brons">
+		<h1 id="Titels">Brons</h1>
+	<div id="Margin">
+		<h5 id="Info">10 GB HDD, 512MB RAM, 1 Core, <br>100GB dataverkeer per maand</h5>
+		<h5 id="Info">(5,95 euro per maand)</h5>
+	</div>
+		<button id="Buy">Buy this package!</button>
+	</div>
+
+	<div id="Silver">
+		<h1 id="Titels">Silver</h1>
+	<div id="Margin">
+		<h5 id="Info">20 GB HDD, 1048MB RAM, 2 Cores,<br> 200GB dataverkeer per maand
+		<h5 id="Info">(7,95 euro per maand)</h5>
+	</div>
+		<button id="Buy">Buy this package!</button>
+	</div>
+
+			<div id="Goud">
+		<h1 id="Titels">Goud</h1>
+	<div id="Margin">
+		<h5 id="Info"> 50 GB HDD, 2048MB RAM, 4 Cores,<br> onbeperkt dataverkeer per maand</h5>
+		<h5 id="Info"> (10,95 euro per maand)</h5>
+	</div>
+		<button id="Buy">Buy this package!</button>
+			</div>
+	</div>
+</div>
+
+
+
+
+		<!--	
+		<h4>Pakket Brons: 10 GB HDD, 512MB RAM, 1 Core,100GB dataverkeer per maand<br> (5,95 euro per maand)</h4>
 		<h4>Pakket Silver: 20 GB HDD, 1048MB RAM, 2 Cores, 200GB dataverkeer per maand<br> (7,95 euro per maand)</h4>
 		<h4> Pakket Goud: 50 GB HDD, 2048MB RAM, 4 Cores, onbeperkt dataverkeer per maand<br> (10,95 euro per maand)</h4>
 		<p>Dit zijn de hosting pakketen die beschikbaar zijn.<br> Per pakket worden ze uiteraard
-			duurder maar u heeft er wel meer aan natuurlijk!</p>
-			<img id="Gold" src="Images/Gold.jpg">
+			Duurder maar u heeft er wel meer aan natuurlijk!</p>
+			<img id="Gold" src="Images/Gold.jpg">-->
 		</div>
-
+<div id="Calculator">
+	<h4 id="Kosten">Bereken de kosten van uw aankoop</h4>
+			 <select id="Opties">
+			  <option id="Brons" value="0">Brons</option>
+			  <option id="Silver" value="1">Silver</option>
+			  <option id="Goud" value="2">Goud</option>
 		</div>
+	</select> 
+	<input  id="ZeInput" type="input" name="input" placeholder="maanden..">
+	<button id="CalcButton" onclick="Money();">Bereken kosten</button>
+	<h4 id="Kosten">Het kost: $<a id="Cost">0</a> (Je hebt <a id="Korting">0</a>% korting)</h4>
+</div>
 		</body>
+
+		<script type="text/javascript">
+		var bronsc = 0;
+		var silversc = 0;
+		var goldsc = 0; 
+		var message =  document.getElementById("Cost");
+		var korting = document.getElementById("Korting");
+		var cost = document.getElementById("ZeInput").value;
+		
+	function Money() {
+		var listValue = document.getElementById("Opties").value;
+	if (listValue == 0) {
+		console.log(listValue);
+		bronsc = 0;
+		cost = document.getElementById("ZeInput").value;
+		if (cost <= 11){
+			bronsc = cost * 5.75;
+			message.innerHTML = bronsc;
+			korting.innerHTML = ("0");
+		}
+		if (cost > 11) {
+			bronsc = cost * 5.29;
+			message.innerHTML = bronsc;
+			korting.innerHTML = ("8");
+		}
+		if (cost > 59) {
+			bronsc = cost * 4.88;
+			message.innerHTML = bronsc;
+			korting.innerHTML = ("15");
+		}
+	}	
+		if (listValue == 1) {
+			console.log(listValue);
+		silversc = 0;
+		cost = document.getElementById("ZeInput").value;
+	if (cost <= 11){
+			silversc = cost * 7.95;
+			message.innerHTML = silversc;
+			korting.innerHTML = ("0");
+		}
+		if (cost > 11) {
+			silversc = cost * 7.31;
+			message.innerHTML = silversc;
+			korting.innerHTML = ("8");
+		}
+		if (cost > 59) {
+			silversc = cost * 6.75;
+			message.innerHTML = silversc;
+			korting.innerHTML = ("15");
+		}
+	}	
+		if (listValue == 2) {
+			console.log(listValue);
+		goldsc = 0;
+		cost = document.getElementById("ZeInput").value;
+		if (cost <= 11){
+			goldsc = cost * 10.95;
+			message.innerHTML = goldsc;
+			korting.innerHTML = ("0");
+		}
+		if (cost > 11) {
+			goldsc = cost * 10;
+			message.innerHTML = goldsc;
+			korting.innerHTML = ("8");
+		}
+		if (cost > 59) {
+			goldsc = cost * 9.30;
+			message.innerHTML = goldsc;
+			korting.innerHTML = ("15");
+		}
+	}	
+}
+</script>
 
 </html>

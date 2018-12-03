@@ -58,4 +58,8 @@ background:	white;
 #FormContainer{
 	width: 300px;
 }
+#Contact{
+	font-size: 15px;
+	width: 250px;
+}
 }

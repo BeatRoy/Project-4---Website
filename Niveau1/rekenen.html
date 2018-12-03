@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reken</title>
+</head>
+<body>
+	 <select id="Opties">
+			  <option id="Brons" value="0">Brons</option>
+			  <option id="Silver" value="1">Silver</option>
+			  <option id="Goud" value="2">Goud</option>
+		</div>
+	</select> 
+	<input  id="ZeInput" type="input" name="input" placeholder="maanden..">
+	<button id="CalcButton" onclick="Money();">Bereken kosten</button>
+	<h4>The cost is: $<a id="Cost">0</a></h4>
+
+</body>
+
+<script type="text/javascript">
+		var bronsc = 0;
+		var silversc = 0;
+		var goldsc = 0; 
+		var message =  document.getElementById("Cost");
+		var cost = document.getElementById("ZeInput").value;
+		
+	function Money() {
+		var listValue = document.getElementById("Opties").value;
+	if (listValue == 0) {
+		console.log(listValue);
+		bronsc = 0;
+		cost = document.getElementById("ZeInput").value;
+		bronsc = cost * 5.75;
+		message.innerHTML = bronsc;
+	}	
+		if (listValue == 1) {
+			console.log(listValue);
+		silversc = 0;
+		cost = document.getElementById("ZeInput").value;
+		silversc = cost * 7.95;
+		message.innerHTML = silversc;
+	}	
+		if (listValue == 2) {
+			console.log(listValue);
+		goldsc = 0;
+		cost = document.getElementById("ZeInput").value;
+		goldsc = cost * 10.75;
+		message.innerHTML = goldsc;
+	}	
+}
+</script>
+</html>

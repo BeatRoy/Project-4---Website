@@ -1,8 +1,6 @@
 #Media{
 	font-size: 60px;
-	display: block;
-	width: 500px;
-	margin: auto;
+	text-align: center;
 	margin-top: 10px;
 	padding-bottom: 30px;
 }
@@ -17,3 +15,20 @@
 body{
 	
 }
+@media screen and (max-width: 1500px){
+#Twitter{
+	width: 500px;
+}
+}
+@media screen and (max-width: 500px){
+	#Twitter{
+		width: 300px;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+	#Media{
+		font-size: 31px;
+	}
+	}
